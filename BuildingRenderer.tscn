@@ -1,3 +1,32 @@
-[gd_scene format=3 uid="uid://b0fl7583qp5sy"]
+[gd_scene load_steps=6 format=3 uid="uid://b0fl7583qp5sy"]
+
+[ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_hc5w2"]
+[ext_resource type="PackedScene" uid="uid://daw2tem3xusvp" path="res://Dronehub.gltf" id="1_m8p5t"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kksow"]
+
+[sub_resource type="Sky" id="Sky_jaaov"]
+sky_material = SubResource("ProceduralSkyMaterial_kksow")
+
+[sub_resource type="Environment" id="Environment_rkmpw"]
+background_mode = 2
+background_color = Color(1, 0.00392157, 0.972549, 0)
+background_energy_multiplier = 1.46
+sky = SubResource("Sky_jaaov")
+ambient_light_source = 3
+ambient_light_color = Color(0.807843, 0.529412, 0.360784, 1)
+ambient_light_sky_contribution = 0.38
+ambient_light_energy = 0.0
+adjustment_enabled = true
 
 [node name="BuildingRenderer" type="Node3D"]
+script = ExtResource("1_hc5w2")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.766044, 0.642788, 0, -0.642788, 0.766044, 0, 50, 60)
+environment = SubResource("Environment_rkmpw")
+fov = 22.1
+near = 0.038
+
+[node name="Dronehub" parent="Camera3D" instance=ExtResource("1_m8p5t")]
+transform = Transform3D(0.707107, 0, 0.707107, 0.454519, 0.766044, -0.454519, -0.541675, 0.642788, 0.541675, 0, 4.04354, -82.6051)
