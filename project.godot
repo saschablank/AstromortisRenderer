@@ -28,3 +28,9 @@ version_control/autoload_on_startup=true
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/terrain_3d/plugin.cfg")
+
+[importer_defaults]
+
+animation_library={
+"import_script/path": "res://addons/blender_godot_pipeline/GLTFImporter.gd"
+}
