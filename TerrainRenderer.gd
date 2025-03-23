@@ -3,8 +3,6 @@ extends Camera3D
 var is_rendering = false
 @export var level_name: String = ""
 
-@export var top_left: Node3D = null
-@export var bottom_right: Node3D = null
 @export var tile_count_x = 0
 @export var tile_count_y = 0
 @export var pack_output = false
