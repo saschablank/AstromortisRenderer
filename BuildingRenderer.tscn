@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://b0fl7583qp5sy"]
+[gd_scene load_steps=8 format=3 uid="uid://b0fl7583qp5sy"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_hc5w2"]
 [ext_resource type="PackedScene" uid="uid://daw2tem3xusvp" path="res://Dronehub.gltf" id="1_m8p5t"]
+[ext_resource type="Terrain3DMaterial" uid="uid://cydel065ah7yd" path="res://Levels/Level02/Terrain3DMaterialnode_3d.tres" id="3_ufheo"]
+[ext_resource type="Terrain3DAssets" uid="uid://bt1jf5vdsmhcm" path="res://Levels/Level02/Terrain3DAssetnode.tres" id="4_wc115"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kksow"]
 
@@ -34,3 +36,9 @@ near = 0.038
 
 [node name="Dronehub" parent="." instance=ExtResource("1_m8p5t")]
 transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 5.36246, 77.9595)
+
+[node name="Terrain3D" type="Terrain3D" parent="."]
+data_directory = "res://Levels/Level02"
+material = ExtResource("3_ufheo")
+assets = ExtResource("4_wc115")
+top_level = true
