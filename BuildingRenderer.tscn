@@ -42,3 +42,4 @@ data_directory = "res://Levels/Level02"
 material = ExtResource("3_ufheo")
 assets = ExtResource("4_wc115")
 top_level = true
+metadata/_edit_lock_ = true
