@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b0fl7583qp5sy"]
+[gd_scene load_steps=13 format=3 uid="uid://b0fl7583qp5sy"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_hc5w2"]
 [ext_resource type="PackedScene" uid="uid://daw2tem3xusvp" path="res://Dronehub.gltf" id="1_m8p5t"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://csjk15x5twpa" path="res://models/Abfallentsorgungsanlage.gltf" id="6_tbh8p"]
 [ext_resource type="PackedScene" uid="uid://bxh1a15sv5nb2" path="res://models/New_Chemical_Factory.gltf" id="7_qlv7x"]
 [ext_resource type="PackedScene" uid="uid://duigklxkv0pct" path="res://models/Dronehub.gltf" id="8_gd71d"]
+[ext_resource type="PackedScene" uid="uid://bcciwa1mjmh2r" path="res://models/Main_Factory.gltf" id="9_lhvlu"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kksow"]
 
@@ -59,3 +60,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.9791, 0, 147.658)
 
 [node name="Dronehub2" parent="." instance=ExtResource("8_gd71d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 106.728, 0, 121.499)
+
+[node name="Main_Factory" parent="." instance=ExtResource("9_lhvlu")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 81.7652, 0, 202.919)
+
+[editable path="Dronehub2"]
