@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b0fl7583qp5sy"]
+[gd_scene load_steps=15 format=3 uid="uid://b0fl7583qp5sy"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_hc5w2"]
 [ext_resource type="PackedScene" uid="uid://daw2tem3xusvp" path="res://Dronehub.gltf" id="1_m8p5t"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://duigklxkv0pct" path="res://models/Dronehub.gltf" id="8_gd71d"]
 [ext_resource type="PackedScene" uid="uid://bcciwa1mjmh2r" path="res://models/Main_Factory.gltf" id="9_lhvlu"]
 [ext_resource type="PackedScene" uid="uid://dyyn0quk3moly" path="res://models/Energy_Storage.gltf" id="10_x7hu6"]
+[ext_resource type="PackedScene" uid="uid://pt464w5kpgxq" path="res://models/Windrad.gltf" id="11_wd45n"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kksow"]
 
@@ -73,5 +74,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.422, 0, 166.555)
 
 [node name="Energy_Storage4" parent="." instance=ExtResource("10_x7hu6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100.308, 0, 166.618)
+
+[node name="Windrad" parent="." instance=ExtResource("11_wd45n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.41, 0, 202.014)
+
+[node name="Windrad2" parent="." instance=ExtResource("11_wd45n")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 40.3307, 0, 187.113)
+
+[node name="Windrad3" parent="." instance=ExtResource("11_wd45n")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 28.2366, 0, 180.146)
 
 [editable path="Dronehub2"]
