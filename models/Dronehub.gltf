@@ -71,7 +71,7 @@
 					"mesh_data":0,
 					"export_UI":1,
 					"save_path":"//..\\..\\..\\..\\source\\repos\\Main_Game\\AstromortisRenderer\\models\\Dronehub.gltf",
-					"counter":9
+					"counter":12
 				}
 			},
 			"name":"Scene",
@@ -88,7 +88,12 @@
 				"hops":{}
 			},
 			"mesh":0,
-			"name":"Dronehub_Main"
+			"name":"Dronehub_Main",
+			"translation":[
+				-1.6000003814697266,
+				0.02568131685256958,
+				-1.5
+			]
 		},
 		{
 			"extras":{
@@ -121,6 +126,49 @@
 				{
 					"sampler":0,
 					"target":{
+						"node":0,
+						"path":"translation"
+					}
+				},
+				{
+					"sampler":1,
+					"target":{
+						"node":0,
+						"path":"rotation"
+					}
+				},
+				{
+					"sampler":2,
+					"target":{
+						"node":0,
+						"path":"scale"
+					}
+				}
+			],
+			"name":"Dronehub_Luke_Anim",
+			"samplers":[
+				{
+					"input":60,
+					"interpolation":"STEP",
+					"output":61
+				},
+				{
+					"input":62,
+					"interpolation":"LINEAR",
+					"output":63
+				},
+				{
+					"input":60,
+					"interpolation":"STEP",
+					"output":64
+				}
+			]
+		},
+		{
+			"channels":[
+				{
+					"sampler":0,
+					"target":{
 						"node":1,
 						"path":"translation"
 					}
@@ -145,17 +193,17 @@
 				{
 					"input":60,
 					"interpolation":"STEP",
-					"output":61
+					"output":65
 				},
 				{
 					"input":62,
 					"interpolation":"LINEAR",
-					"output":63
+					"output":66
 				},
 				{
 					"input":60,
 					"interpolation":"STEP",
-					"output":64
+					"output":67
 				}
 			]
 		},
@@ -188,17 +236,17 @@
 				{
 					"input":60,
 					"interpolation":"STEP",
-					"output":65
+					"output":68
 				},
 				{
 					"input":62,
 					"interpolation":"LINEAR",
-					"output":66
+					"output":69
 				},
 				{
 					"input":60,
 					"interpolation":"STEP",
-					"output":67
+					"output":70
 				}
 			]
 		}
@@ -1343,6 +1391,24 @@
 			"componentType":5126,
 			"count":2,
 			"type":"VEC3"
+		},
+		{
+			"bufferView":68,
+			"componentType":5126,
+			"count":2,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":69,
+			"componentType":5126,
+			"count":101,
+			"type":"VEC4"
+		},
+		{
+			"bufferView":70,
+			"componentType":5126,
+			"count":2,
+			"type":"VEC3"
 		}
 	],
 	"bufferViews":[
@@ -1745,6 +1811,21 @@
 			"buffer":0,
 			"byteLength":24,
 			"byteOffset":592916
+		},
+		{
+			"buffer":0,
+			"byteLength":24,
+			"byteOffset":592940
+		},
+		{
+			"buffer":0,
+			"byteLength":1616,
+			"byteOffset":592964
+		},
+		{
+			"buffer":0,
+			"byteLength":24,
+			"byteOffset":594580
 		}
 	],
 	"samplers":[
@@ -1755,7 +1836,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":592940,
+			"byteLength":594604,
 			"uri":"Dronehub.bin"
 		}
 	]
