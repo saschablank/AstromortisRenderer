@@ -17,8 +17,8 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=512
-window/size/viewport_height=512
+window/size/viewport_width=1024
+window/size/viewport_height=1024
 
 [editor]
 
@@ -27,4 +27,10 @@ version_control/autoload_on_startup=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/terrain_3d/plugin.cfg")
+enabled=PackedStringArray("res://addons/blender_godot_pipeline/plugin.cfg", "res://addons/terrain_3d/plugin.cfg")
+
+[importer_defaults]
+
+animation_library={
+"import_script/path": "res://addons/blender_godot_pipeline/GLTFImporter.gd"
+}
