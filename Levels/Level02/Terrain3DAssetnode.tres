@@ -68,7 +68,7 @@ name = "Ground049A"
 id = 2
 albedo_texture = ExtResource("5_xieon")
 normal_texture = ExtResource("6_wwi4s")
-uv_scale = 0.174
+uv_scale = 0.423
 detiling = 0.241
 
 [sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_yh5gi"]
@@ -76,7 +76,7 @@ name = "Ground049B"
 id = 3
 albedo_texture = ExtResource("7_w5b7i")
 normal_texture = ExtResource("8_h568q")
-uv_scale = 0.3
+uv_scale = 0.709
 detiling = 0.175
 
 [sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_ncqoj"]
@@ -84,6 +84,7 @@ name = "Ground054"
 id = 4
 albedo_texture = ExtResource("9_2p7tt")
 normal_texture = ExtResource("10_s4bpo")
+uv_scale = 0.154
 
 [sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_jj24o"]
 name = "Ground055"
@@ -98,14 +99,14 @@ name = "Ground079L"
 id = 6
 albedo_texture = ExtResource("13_04vv2")
 normal_texture = ExtResource("14_yh6xe")
-uv_scale = 0.544
+uv_scale = 0.555
 
 [sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_k6if4"]
 name = "Ground079S"
 id = 7
 albedo_texture = ExtResource("15_3sg1q")
 normal_texture = ExtResource("16_kg1fu")
-uv_scale = 0.322
+uv_scale = 0.548
 detiling = 0.056
 
 [sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_ho3r3"]
