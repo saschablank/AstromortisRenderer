@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://b0fl7583qp5sy"]
+[gd_scene load_steps=22 format=3 uid="uid://b0fl7583qp5sy"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_hc5w2"]
 [ext_resource type="PackedScene" uid="uid://daw2tem3xusvp" path="res://Dronehub.gltf" id="1_m8p5t"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://dpotc8yafmxvn" path="res://models/Sand_Mine.gltf" id="15_cdvxi"]
 [ext_resource type="PackedScene" uid="uid://eacxq08m43tb" path="res://models/Schmelze.gltf" id="16_porsq"]
 [ext_resource type="PackedScene" uid="uid://dx18dglsgnf8q" path="res://models/Water_Factory.gltf" id="17_186ia"]
+[ext_resource type="PackedScene" uid="uid://dhro5466pt0ar" path="res://models/Mine_.gltf" id="18_b2bcp"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kksow"]
 
@@ -122,5 +123,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 118.275, 0, 201.001)
 
 [node name="Water_Factory" parent="." instance=ExtResource("17_186ia")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.61262, 0, 148.76)
+
+[node name="Mine_" parent="." instance=ExtResource("18_b2bcp")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 144.689, 0, 182.506)
 
 [editable path="Dronehub2"]
