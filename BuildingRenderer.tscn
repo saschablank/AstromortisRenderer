@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b0fl7583qp5sy"]
+[gd_scene load_steps=17 format=3 uid="uid://b0fl7583qp5sy"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_hc5w2"]
 [ext_resource type="PackedScene" uid="uid://daw2tem3xusvp" path="res://Dronehub.gltf" id="1_m8p5t"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dyyn0quk3moly" path="res://models/Energy_Storage.gltf" id="10_x7hu6"]
 [ext_resource type="PackedScene" uid="uid://pt464w5kpgxq" path="res://models/Windrad.gltf" id="11_wd45n"]
 [ext_resource type="PackedScene" uid="uid://cvfkf5r65456i" path="res://models/Solar_Panel.gltf" id="12_2ucca"]
+[ext_resource type="PackedScene" uid="uid://d4f5sva0o7xm1" path="res://models/Farm.gltf" id="13_vmsyd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kksow"]
 
@@ -102,5 +103,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 101.317, 0, 150.841)
 
 [node name="Solar_Panel6" parent="." instance=ExtResource("12_2ucca")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 105.809, 9.53674e-07, 150.825)
+
+[node name="Farm" parent="." instance=ExtResource("13_vmsyd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.261, 0.075633, 88.6278)
 
 [editable path="Dronehub2"]
