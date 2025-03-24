@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2ueftxl2o12d"]
+
+[ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_o6jmn"]
+[ext_resource type="PackedScene" uid="uid://dx18dglsgnf8q" path="res://models/Water_Factory.gltf" id="2_nm62k"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dm5w6"]
+
+[sub_resource type="Sky" id="Sky_5btfs"]
+sky_material = SubResource("ProceduralSkyMaterial_dm5w6")
+
+[sub_resource type="Environment" id="Environment_3djdq"]
+background_mode = 1
+background_color = Color(1, 0.00392157, 0.972549, 0)
+background_energy_multiplier = 1.46
+sky = SubResource("Sky_5btfs")
+ambient_light_source = 3
+ambient_light_color = Color(0.807843, 0.529412, 0.360784, 1)
+ambient_light_sky_contribution = 0.38
+ambient_light_energy = 0.0
+adjustment_enabled = true
+
+[node name="WaterFactory" type="Node3D" node_paths=PackedStringArray("building_node")]
+script = ExtResource("1_o6jmn")
+building_name = "waterfactory"
+building_node = NodePath("Water_Factory")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 85.6969, 83.332)
+environment = SubResource("Environment_3djdq")
+projection = 1
+fov = 22.1
+size = 21.615
+near = 0.038
+
+[node name="Water_Factory" parent="." instance=ExtResource("2_nm62k")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, -3.52619, 0)

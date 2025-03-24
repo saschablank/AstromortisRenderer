@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://chne3pikx1omq"]
+
+[ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_blwa4"]
+[ext_resource type="PackedScene" uid="uid://dxq4sr1mpodye" path="res://models/Living_Quater.gltf" id="2_e48v8"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_euhpc"]
+
+[sub_resource type="Sky" id="Sky_o76q2"]
+sky_material = SubResource("ProceduralSkyMaterial_euhpc")
+
+[sub_resource type="Environment" id="Environment_d7ee7"]
+background_mode = 1
+background_color = Color(1, 0.00392157, 0.972549, 0)
+background_energy_multiplier = 1.46
+sky = SubResource("Sky_o76q2")
+ambient_light_source = 3
+ambient_light_color = Color(0.807843, 0.529412, 0.360784, 1)
+ambient_light_sky_contribution = 0.38
+ambient_light_energy = 0.0
+adjustment_enabled = true
+
+[node name="LivingQuarter" type="Node3D" node_paths=PackedStringArray("building_node")]
+script = ExtResource("1_blwa4")
+building_name = "living_quarter"
+building_node = NodePath("Living_Quater2")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 85.6969, 83.332)
+environment = SubResource("Environment_d7ee7")
+projection = 1
+fov = 22.1
+size = 23.075
+near = 0.038
+
+[node name="Living_Quater2" parent="." instance=ExtResource("2_e48v8")]

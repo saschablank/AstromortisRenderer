@@ -6,6 +6,7 @@ var is_rendering = false
 @export var tile_count_x = 0
 @export var tile_count_y = 0
 @export var pack_output = false
+@export var output_folder:String = ""
 var step_size = 0
 var step_size_z = 0
 # Called when the node enters the scene tree for the first time.
@@ -28,7 +29,7 @@ func jump_and_render():
 		await RenderingServer.frame_post_draw 
 		print(global_position)
 		var image = self.get_viewport().get_texture().get_image()
-		image.save_png("res://output/"+ str(counter) + ".png")
+		image.save_png(output_folder + str(counter) + ".png")
 		global_position.x += size
 		if pack_output == true:
 			complete_map.blend_rect(image,Rect2i(0,0,1024,1024), Vector2(x * 1024,y * 1024))
@@ -41,7 +42,7 @@ func jump_and_render():
 			# 135 == 180 - 45 i dont fully understand why but it has somthing to do with the rotation of the camera
 			global_position.z += size + (180 - abs(rotation_degrees.x)) 
 	if pack_output == true:
-		complete_map.save_png("res://output/level01_complete.png")
+		complete_map.save_png(output_folder + "level01_complete.png")
 	get_tree().quit(0)
 		
 

@@ -1,13 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://c81qbha6fcgri"]
+[gd_scene load_steps=4 format=3 uid="uid://c81qbha6fcgri"]
 
-[ext_resource type="Terrain3DMaterial" uid="uid://cydel065ah7yd" path="res://Main_Directory/Terrain3DMaterialnode_3d.tres" id="1_yn54n"]
-[ext_resource type="Terrain3DAssets" uid="uid://bt1jf5vdsmhcm" path="res://Main_Directory/Terrain3DAssetnode.tres" id="2_nb5rg"]
+[ext_resource type="Terrain3DMaterial" uid="uid://cydel065ah7yd" path="res://Levels/Level02/Terrain3DMaterialnode_3d.tres" id="1_yn54n"]
+[ext_resource type="Terrain3DAssets" uid="uid://bt1jf5vdsmhcm" path="res://Levels/Level02/Terrain3DAssetnode.tres" id="2_nb5rg"]
+[ext_resource type="Script" path="res://TerrainRenderer.gd" id="3_g35ti"]
 
 [node name="Node3D" type="Node3D"]
 
-[node name="Terrain3D" type="Terrain3D" parent="."]
-data_directory = "res://Main_Directory"
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Terrain3D2" type="Terrain3D" parent="."]
+data_directory = "res://Levels/Level02"
 material = ExtResource("1_yn54n")
 assets = ExtResource("2_nb5rg")
 top_level = true
 metadata/_edit_lock_ = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -116.027, 300, 135.176)
+keep_aspect = 0
+projection = 1
+size = 300.0
+script = ExtResource("3_g35ti")
+tile_count_x = 2
+tile_count_y = 2
+pack_output = true
+output_folder = "res://output/level02/"

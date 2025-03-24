@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://dq64meyhjyfur"]
+
+[ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_84rgp"]
+[ext_resource type="PackedScene" uid="uid://eacxq08m43tb" path="res://models/Schmelze.gltf" id="1_kpvp4"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5p4mf"]
+
+[sub_resource type="Sky" id="Sky_ovv17"]
+sky_material = SubResource("ProceduralSkyMaterial_5p4mf")
+
+[sub_resource type="Environment" id="Environment_cghe4"]
+background_mode = 1
+background_color = Color(1, 0.00392157, 0.972549, 0)
+background_energy_multiplier = 1.46
+sky = SubResource("Sky_ovv17")
+ambient_light_source = 3
+ambient_light_color = Color(0.807843, 0.529412, 0.360784, 1)
+ambient_light_sky_contribution = 0.38
+ambient_light_energy = 0.0
+adjustment_enabled = true
+
+[node name="Forge" type="Node3D" node_paths=PackedStringArray("building_node")]
+script = ExtResource("1_84rgp")
+building_name = "forge"
+building_node = NodePath("Schmelze2")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 66.6297, 66.837)
+environment = SubResource("Environment_cghe4")
+projection = 1
+fov = 22.1
+size = 14.035
+near = 0.038
+
+[node name="Schmelze2" parent="." instance=ExtResource("1_kpvp4")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)

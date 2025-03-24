@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://bnoa6boq4ub14"]
+
+[ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_bi43y"]
+[ext_resource type="PackedScene" uid="uid://dyyn0quk3moly" path="res://models/Energy_Storage.gltf" id="2_3sg5h"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1ixy1"]
+
+[sub_resource type="Sky" id="Sky_sg086"]
+sky_material = SubResource("ProceduralSkyMaterial_1ixy1")
+
+[sub_resource type="Environment" id="Environment_g32kb"]
+background_mode = 1
+background_color = Color(1, 0.00392157, 0.972549, 0)
+background_energy_multiplier = 1.46
+sky = SubResource("Sky_sg086")
+ambient_light_source = 3
+ambient_light_color = Color(0.807843, 0.529412, 0.360784, 1)
+ambient_light_sky_contribution = 0.38
+ambient_light_energy = 0.0
+adjustment_enabled = true
+
+[node name="EnergyStorage" type="Node3D" node_paths=PackedStringArray("building_node")]
+script = ExtResource("1_bi43y")
+building_name = "energy_storage"
+building_node = NodePath("Energy_Storage2")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 85.6969, 83.332)
+environment = SubResource("Environment_g32kb")
+projection = 1
+fov = 22.1
+size = 9.206
+near = 0.038
+
+[node name="Energy_Storage2" parent="." instance=ExtResource("2_3sg5h")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)

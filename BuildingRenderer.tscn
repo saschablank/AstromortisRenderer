@@ -26,14 +26,14 @@
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kksow"]
 
-[sub_resource type="Sky" id="Sky_yofor"]
+[sub_resource type="Sky" id="Sky_rrl35"]
 sky_material = SubResource("ProceduralSkyMaterial_kksow")
 
 [sub_resource type="Environment" id="Environment_rkmpw"]
 background_mode = 1
 background_color = Color(1, 0.00392157, 0.972549, 0)
 background_energy_multiplier = 1.46
-sky = SubResource("Sky_yofor")
+sky = SubResource("Sky_rrl35")
 ambient_light_source = 3
 ambient_light_color = Color(0.807843, 0.529412, 0.360784, 1)
 ambient_light_sky_contribution = 0.38
