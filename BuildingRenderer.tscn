@@ -1,28 +1,9 @@
-[gd_scene load_steps=27 format=3 uid="uid://b0fl7583qp5sy"]
+[gd_scene load_steps=8 format=3 uid="uid://b0fl7583qp5sy"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_hc5w2"]
 [ext_resource type="PackedScene" uid="uid://daw2tem3xusvp" path="res://Dronehub.gltf" id="1_m8p5t"]
 [ext_resource type="Terrain3DMaterial" uid="uid://cydel065ah7yd" path="res://Levels/Level02/Terrain3DMaterialnode_3d.tres" id="3_ufheo"]
 [ext_resource type="Terrain3DAssets" uid="uid://bt1jf5vdsmhcm" path="res://Levels/Level02/Terrain3DAssetnode.tres" id="4_wc115"]
-[ext_resource type="PackedScene" uid="uid://dh70vy1svoy8o" path="res://models/Main_Storage.gltf" id="5_k25qi"]
-[ext_resource type="PackedScene" uid="uid://csjk15x5twpa" path="res://models/Abfallentsorgungsanlage.gltf" id="6_tbh8p"]
-[ext_resource type="PackedScene" uid="uid://bxh1a15sv5nb2" path="res://models/New_Chemical_Factory.gltf" id="7_qlv7x"]
-[ext_resource type="PackedScene" uid="uid://duigklxkv0pct" path="res://models/Dronehub.gltf" id="8_gd71d"]
-[ext_resource type="PackedScene" uid="uid://bcciwa1mjmh2r" path="res://models/Main_Factory.gltf" id="9_lhvlu"]
-[ext_resource type="PackedScene" uid="uid://dyyn0quk3moly" path="res://models/Energy_Storage.gltf" id="10_x7hu6"]
-[ext_resource type="PackedScene" uid="uid://pt464w5kpgxq" path="res://models/Windrad.gltf" id="11_wd45n"]
-[ext_resource type="PackedScene" uid="uid://cvfkf5r65456i" path="res://models/Solar_Panel.gltf" id="12_2ucca"]
-[ext_resource type="PackedScene" uid="uid://d4f5sva0o7xm1" path="res://models/Farm.gltf" id="13_vmsyd"]
-[ext_resource type="PackedScene" uid="uid://chmoxy6p4fcbr" path="res://models/Sauerstofftank_1.gltf" id="14_wmo26"]
-[ext_resource type="PackedScene" uid="uid://dpotc8yafmxvn" path="res://models/Sand_Mine.gltf" id="15_cdvxi"]
-[ext_resource type="PackedScene" uid="uid://eacxq08m43tb" path="res://models/Schmelze.gltf" id="16_porsq"]
-[ext_resource type="PackedScene" uid="uid://dx18dglsgnf8q" path="res://models/Water_Factory.gltf" id="17_186ia"]
-[ext_resource type="PackedScene" uid="uid://dhro5466pt0ar" path="res://models/Mine_.gltf" id="18_b2bcp"]
-[ext_resource type="PackedScene" uid="uid://jp3l653kygsm" path="res://models/Main_Satalitenstation.gltf" id="19_f4uhd"]
-[ext_resource type="PackedScene" uid="uid://7yueqegsb404" path="res://models/Forschungsanlage.gltf" id="20_u6v6e"]
-[ext_resource type="PackedScene" uid="uid://cinh7j3tpkvvy" path="res://models/Kino.gltf" id="21_ru2b2"]
-[ext_resource type="PackedScene" uid="uid://dxq4sr1mpodye" path="res://models/Living_Quater.gltf" id="22_356gb"]
-[ext_resource type="PackedScene" uid="uid://beap6lul4y80w" path="res://models/Erholungscenter.gltf" id="23_xk11q"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kksow"]
 
@@ -62,89 +43,3 @@ material = ExtResource("3_ufheo")
 assets = ExtResource("4_wc115")
 top_level = true
 metadata/_edit_lock_ = true
-
-[node name="Main_Storage" parent="." instance=ExtResource("5_k25qi")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 75.6031, 0, 94.8654)
-
-[node name="Abfallentsorgungsanlage" parent="." instance=ExtResource("6_tbh8p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.3007, 0, 69.0612)
-
-[node name="New_Chemical_Factory" parent="." instance=ExtResource("7_qlv7x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.9791, 0, 147.658)
-
-[node name="Dronehub2" parent="." instance=ExtResource("8_gd71d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 106.728, 0, 121.499)
-
-[node name="Main_Factory" parent="." instance=ExtResource("9_lhvlu")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 81.7652, 0, 202.919)
-
-[node name="Energy_Storage2" parent="." instance=ExtResource("10_x7hu6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.4361, 0, 166.6)
-
-[node name="Energy_Storage3" parent="." instance=ExtResource("10_x7hu6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.422, 0, 166.555)
-
-[node name="Energy_Storage4" parent="." instance=ExtResource("10_x7hu6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100.308, 0, 166.618)
-
-[node name="Windrad" parent="." instance=ExtResource("11_wd45n")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.41, 0, 202.014)
-
-[node name="Windrad2" parent="." instance=ExtResource("11_wd45n")]
-transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 40.3307, 0, 187.113)
-
-[node name="Windrad3" parent="." instance=ExtResource("11_wd45n")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 28.2366, 0, 180.146)
-
-[node name="Solar_Panel" parent="." instance=ExtResource("12_2ucca")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.0565, 0, 150.628)
-
-[node name="Solar_Panel2" parent="." instance=ExtResource("12_2ucca")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.2171, 0, 150.703)
-
-[node name="Solar_Panel3" parent="." instance=ExtResource("12_2ucca")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 91.862, 0, 150.766)
-
-[node name="Solar_Panel4" parent="." instance=ExtResource("12_2ucca")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.5553, 0, 150.836)
-
-[node name="Solar_Panel5" parent="." instance=ExtResource("12_2ucca")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 101.317, 0, 150.841)
-
-[node name="Solar_Panel6" parent="." instance=ExtResource("12_2ucca")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 105.809, 9.53674e-07, 150.825)
-
-[node name="Farm" parent="." instance=ExtResource("13_vmsyd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.261, 0.075633, 88.6278)
-
-[node name="Sauerstofftank_1" parent="." instance=ExtResource("14_wmo26")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.3456, 0, 123.826)
-
-[node name="Sand_Mine2" parent="." instance=ExtResource("15_cdvxi")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 179.707, 0, 128.034)
-
-[node name="Schmelze2" parent="." instance=ExtResource("16_porsq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 118.275, 0, 201.001)
-
-[node name="Water_Factory" parent="." instance=ExtResource("17_186ia")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.61262, 0, 148.76)
-
-[node name="Mine_" parent="." instance=ExtResource("18_b2bcp")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 144.689, 0, 182.506)
-
-[node name="Main_Satalitenstation" parent="." instance=ExtResource("19_f4uhd")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -4.49905, 0, 198.794)
-
-[node name="Forschungsanlage2" parent="." instance=ExtResource("20_u6v6e")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 134.907, 0.255035, 125.508)
-
-[node name="Kino2" parent="." instance=ExtResource("21_ru2b2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.3869, 1.90735e-06, 203.338)
-
-[node name="Living_Quater2" parent="." instance=ExtResource("22_356gb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 173.375, 0.140347, 209.366)
-
-[node name="Erholungscenter2" parent="." instance=ExtResource("23_xk11q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 198.631, 0, 160.241)
-
-[editable path="Dronehub2"]
