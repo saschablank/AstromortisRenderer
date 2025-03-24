@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b0fl7583qp5sy"]
+[gd_scene load_steps=16 format=3 uid="uid://b0fl7583qp5sy"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_hc5w2"]
 [ext_resource type="PackedScene" uid="uid://daw2tem3xusvp" path="res://Dronehub.gltf" id="1_m8p5t"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bcciwa1mjmh2r" path="res://models/Main_Factory.gltf" id="9_lhvlu"]
 [ext_resource type="PackedScene" uid="uid://dyyn0quk3moly" path="res://models/Energy_Storage.gltf" id="10_x7hu6"]
 [ext_resource type="PackedScene" uid="uid://pt464w5kpgxq" path="res://models/Windrad.gltf" id="11_wd45n"]
+[ext_resource type="PackedScene" uid="uid://cvfkf5r65456i" path="res://models/Solar_Panel.gltf" id="12_2ucca"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kksow"]
 
@@ -83,5 +84,23 @@ transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 
 
 [node name="Windrad3" parent="." instance=ExtResource("11_wd45n")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 28.2366, 0, 180.146)
+
+[node name="Solar_Panel" parent="." instance=ExtResource("12_2ucca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.0565, 0, 150.628)
+
+[node name="Solar_Panel2" parent="." instance=ExtResource("12_2ucca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.2171, 0, 150.703)
+
+[node name="Solar_Panel3" parent="." instance=ExtResource("12_2ucca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 91.862, 0, 150.766)
+
+[node name="Solar_Panel4" parent="." instance=ExtResource("12_2ucca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.5553, 0, 150.836)
+
+[node name="Solar_Panel5" parent="." instance=ExtResource("12_2ucca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 101.317, 0, 150.841)
+
+[node name="Solar_Panel6" parent="." instance=ExtResource("12_2ucca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 105.809, 9.53674e-07, 150.825)
 
 [editable path="Dronehub2"]
