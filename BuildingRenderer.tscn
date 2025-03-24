@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://b0fl7583qp5sy"]
+[gd_scene load_steps=27 format=3 uid="uid://b0fl7583qp5sy"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_hc5w2"]
 [ext_resource type="PackedScene" uid="uid://daw2tem3xusvp" path="res://Dronehub.gltf" id="1_m8p5t"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://7yueqegsb404" path="res://models/Forschungsanlage.gltf" id="20_u6v6e"]
 [ext_resource type="PackedScene" uid="uid://cinh7j3tpkvvy" path="res://models/Kino.gltf" id="21_ru2b2"]
 [ext_resource type="PackedScene" uid="uid://dxq4sr1mpodye" path="res://models/Living_Quater.gltf" id="22_356gb"]
+[ext_resource type="PackedScene" uid="uid://beap6lul4y80w" path="res://models/Erholungscenter.gltf" id="23_xk11q"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kksow"]
 
@@ -142,5 +143,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.3869, 1.90735e-06, 203.33
 
 [node name="Living_Quater2" parent="." instance=ExtResource("22_356gb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 173.375, 0.140347, 209.366)
+
+[node name="Erholungscenter2" parent="." instance=ExtResource("23_xk11q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 198.631, 0, 160.241)
 
 [editable path="Dronehub2"]
