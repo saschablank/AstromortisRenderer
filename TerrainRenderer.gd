@@ -9,11 +9,15 @@ var is_rendering = false
 @export var output_folder:String = ""
 var step_size = 0
 var step_size_z = 0
+var aspect_ratio = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	# Automatische Anpassung an Viewport-Breite
 	var distance = abs(global_transform.origin.y)  # Entfernung zur Spielebene
 	step_size =  2.0 * tan(fov * 0.5) * distance
+	var viewport_size = get_viewport().size
+	var aspect_ratio = viewport_size.x / viewport_size.y
+	
 
 
 func jump_and_render():
@@ -40,7 +44,7 @@ func jump_and_render():
 			x = 0
 			global_position.x = start_pos.x
 			# 135 == 180 - 45 i dont fully understand why but it has somthing to do with the rotation of the camera
-			global_position.z += size + (180 - abs(rotation_degrees.x)) 
+			global_position.z += size + (size * aspect_ratio)
 	if pack_output == true:
 		complete_map.save_png(output_folder + "level01_complete.png")
 	get_tree().quit(0)

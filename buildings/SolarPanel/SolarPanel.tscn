@@ -1,32 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://dkypw3ksw72ni"]
+[gd_scene load_steps=4 format=3 uid="uid://dkypw3ksw72ni"]
 
 [ext_resource type="PackedScene" uid="uid://cvfkf5r65456i" path="res://models/Solar_Panel.gltf" id="1_cmcii"]
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_svffv"]
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nxtmj"]
-
-[sub_resource type="Sky" id="Sky_yofor"]
-sky_material = SubResource("ProceduralSkyMaterial_nxtmj")
-
-[sub_resource type="Environment" id="Environment_iud2e"]
-background_mode = 1
-background_color = Color(1, 0.00392157, 0.972549, 0)
-background_energy_multiplier = 1.46
-sky = SubResource("Sky_yofor")
-ambient_light_source = 3
-ambient_light_color = Color(0.807843, 0.529412, 0.360784, 1)
-ambient_light_sky_contribution = 0.38
-ambient_light_energy = 0.0
-adjustment_enabled = true
+[ext_resource type="Texture2D" uid="uid://bp52g2irp02kv" path="res://szeneBackground.png" id="3_p3rcq"]
 
 [node name="SolarPanel" type="Node3D" node_paths=PackedStringArray("building_node")]
 script = ExtResource("1_svffv")
 building_name = "solar_panel"
 building_node = NodePath("Solar_Panel")
 
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0.123516, 29.4898, 31.1823)
-environment = SubResource("Environment_iud2e")
 projection = 1
 fov = 22.1
 size = 5.0
@@ -34,3 +22,8 @@ near = 0.038
 
 [node name="Solar_Panel" parent="." instance=ExtResource("1_cmcii")]
 transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 2.53532)
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, -40.2722)
+gi_mode = 0
+texture = ExtResource("3_p3rcq")

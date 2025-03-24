@@ -1,36 +1,29 @@
-[gd_scene load_steps=6 format=3 uid="uid://c8a7ax4lr25xe"]
+[gd_scene load_steps=4 format=3 uid="uid://c8a7ax4lr25xe"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_3qkrj"]
 [ext_resource type="PackedScene" uid="uid://duigklxkv0pct" path="res://models/Dronehub.gltf" id="2_nvrl0"]
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mvypb"]
-
-[sub_resource type="Sky" id="Sky_6q2q0"]
-sky_material = SubResource("ProceduralSkyMaterial_mvypb")
-
-[sub_resource type="Environment" id="Environment_rsy83"]
-background_mode = 1
-background_color = Color(1, 0.00392157, 0.972549, 0)
-background_energy_multiplier = 1.46
-sky = SubResource("Sky_6q2q0")
-ambient_light_source = 3
-ambient_light_color = Color(0.807843, 0.529412, 0.360784, 1)
-ambient_light_sky_contribution = 0.38
-ambient_light_energy = 0.0
-adjustment_enabled = true
+[ext_resource type="Texture2D" uid="uid://bp52g2irp02kv" path="res://szeneBackground.png" id="3_qm5an"]
 
 [node name="Dronehub" type="Node3D" node_paths=PackedStringArray("building_node")]
 script = ExtResource("1_3qkrj")
 building_name = "dronehub"
 building_node = NodePath("Dronehub")
 
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -2.39494, 82.0472, 83.3324)
-environment = SubResource("Environment_rsy83")
 projection = 1
 fov = 22.1
-size = 38.107
+size = 31.237
 near = 0.038
 
 [node name="Dronehub" parent="." instance=ExtResource("2_nvrl0")]
 transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, -106.272)
+gi_mode = 0
+texture = ExtResource("3_qm5an")
