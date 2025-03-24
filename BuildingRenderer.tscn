@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://b0fl7583qp5sy"]
+[gd_scene load_steps=24 format=3 uid="uid://b0fl7583qp5sy"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_hc5w2"]
 [ext_resource type="PackedScene" uid="uid://daw2tem3xusvp" path="res://Dronehub.gltf" id="1_m8p5t"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://dx18dglsgnf8q" path="res://models/Water_Factory.gltf" id="17_186ia"]
 [ext_resource type="PackedScene" uid="uid://dhro5466pt0ar" path="res://models/Mine_.gltf" id="18_b2bcp"]
 [ext_resource type="PackedScene" uid="uid://jp3l653kygsm" path="res://models/Main_Satalitenstation.gltf" id="19_f4uhd"]
+[ext_resource type="PackedScene" uid="uid://7yueqegsb404" path="res://models/Forschungsanlage.gltf" id="20_u6v6e"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kksow"]
 
@@ -130,5 +131,8 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 144.68
 
 [node name="Main_Satalitenstation" parent="." instance=ExtResource("19_f4uhd")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -4.49905, 0, 198.794)
+
+[node name="Forschungsanlage2" parent="." instance=ExtResource("20_u6v6e")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 134.907, 0.255035, 125.508)
 
 [editable path="Dronehub2"]
