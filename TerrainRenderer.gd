@@ -16,9 +16,53 @@ func _ready() -> void:
 	var distance = abs(global_transform.origin.y)  # Entfernung zur Spielebene
 	step_size =  2.0 * tan(fov * 0.5) * distance
 	var viewport_size = get_viewport().size
-	var aspect_ratio = viewport_size.x / viewport_size.y
+	var step_size_z = viewport_size.y * 0.01 / 2
+	
+func get_world_height():
+	var top_screen = Vector3(512, 0, 0)     # Oberer Bildschirmrand
+	var bottom_screen = Vector3(512, 1024, 0)  # Unterer Bildschirmrand
+	
+	var world_top = unproject_position(top_screen)
+	var world_bottom = unproject_position(bottom_screen)
+	
+	return abs(world_bottom.y - world_top.y)
 	
 
+func test_camera_movement():
+	var screen_bottom = Vector3(512, 1024, 0)  # Punkt am unteren Rand des Viewports
+	
+	# Weltposition VOR der Bewegung
+	var world_before = unproject_position(screen_bottom)
+	print("World Position BEFORE move:", world_before)
+	
+	# Kamera um eine kleine Test-Strecke verschieben (z. B. 100)
+	global_position.z += 100
+	
+	# Weltposition NACH der Bewegung
+	var world_after = unproject_position(screen_bottom)
+	print("World Position AFTER move:", world_after)
+	
+	# Tatsächliche Z-Verschiebung berechnen
+	var diff_z = world_after.y - world_before.y
+	print("Test Step Z: 100, Actual Step Z:", diff_z)
+
+func measure_correct_z_shift():
+	var screen_bottom = Vector3(512, 1024, 0)  # Unterer Rand des Screens
+	
+	# Weltposition VOR der Bewegung
+	var world_before = unproject_position(screen_bottom)
+	print("World Position BEFORE move:", world_before)
+	
+	# Kamera um die Bildschirmhöhe (size) verschieben
+	position.z += size
+	
+	# Weltposition NACH der Bewegung
+	var world_after = unproject_position(screen_bottom)
+	print("World Position AFTER move:", world_after)
+	
+	# Exakte benötigte Z-Verschiebung berechnen
+	var correct_z_step = world_after.y - world_before.y
+	print("Correct Z Step:", correct_z_step)
 
 func jump_and_render():
 	await RenderingServer.frame_post_draw 
@@ -29,9 +73,11 @@ func jump_and_render():
 	var y = 0
 	var start_pos = global_position
 	var window_width = 1024  # Ersetze dies mit deiner Fensterbreite
+	var screen_bottom = Vector2(512, 1024)
 	for p_index in tile_count_x * tile_count_y:
+		#keep_aspect = KEEP_WIDTH
 		await RenderingServer.frame_post_draw 
-		print(global_position)
+		#print(step_size_z)
 		var image = self.get_viewport().get_texture().get_image()
 		image.save_png(output_folder + str(counter) + ".png")
 		global_position.x += size
@@ -43,8 +89,19 @@ func jump_and_render():
 			y += 1
 			x = 0
 			global_position.x = start_pos.x
-			# 135 == 180 - 45 i dont fully understand why but it has somthing to do with the rotation of the camera
-			global_position.z += size + (size * aspect_ratio)
+			#keep_aspect = KEEP_HEIGHT
+			#await RenderingServer.frame_post_draw 
+			global_position.z += 142
+	#		var screen_coords = unproject_position(global_position)
+	#		screen_coords += Vector2(0, 1024)
+	#		global_position.z = project_position(screen_coords,0).z
+			
+			#var step_z = size * step_size_z
+			#print(step_z)
+			## 135 == 180 - 45 i dont fully understand why but it has somthing to do with the rotation of the camera
+			#global_position.z += step_z
+	
+			# Prüfen, ob die Verschiebung korrekt war
 	if pack_output == true:
 		complete_map.save_png(output_folder + "level01_complete.png")
 	get_tree().quit(0)
