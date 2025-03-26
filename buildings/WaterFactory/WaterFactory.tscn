@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://d2ueftxl2o12d"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_o6jmn"]
-[ext_resource type="PackedScene" uid="uid://dx18dglsgnf8q" path="res://models/Water_Factory.gltf" id="2_nm62k"]
 [ext_resource type="Texture2D" uid="uid://bp52g2irp02kv" path="res://szeneBackground.png" id="3_h3p7y"]
+[ext_resource type="PackedScene" uid="uid://du6jlurbionby" path="res://Building Models/Water_Factory/Water_Factory.gltf" id="3_ncgl7"]
 
 [node name="WaterFactory" type="Node3D" node_paths=PackedStringArray("building_node")]
 script = ExtResource("1_o6jmn")
@@ -14,16 +14,16 @@ transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -
 shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 85.6969, 83.332)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 89.0583, 83.332)
 projection = 1
 fov = 22.1
 size = 21.615
 near = 0.038
 
-[node name="Water_Factory" parent="." instance=ExtResource("2_nm62k")]
-transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, -3.52619, 0)
-
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, -40.2722)
 gi_mode = 0
 texture = ExtResource("3_h3p7y")
+
+[node name="Water_Factory" parent="." instance=ExtResource("3_ncgl7")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)

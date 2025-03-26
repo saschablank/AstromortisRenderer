@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwsxhs2kmdfy8"]
+
+[ext_resource type="Texture2D" uid="uid://bp52g2irp02kv" path="res://szeneBackground.png" id="1_6qdwy"]
+[ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_7k1o8"]
+[ext_resource type="PackedScene" uid="uid://y011mvhluen0" path="res://Building Models/Mine/Mine_.gltf" id="2_mu5me"]
+
+[node name="Mine" type="Node3D" node_paths=PackedStringArray("building_node")]
+script = ExtResource("1_7k1o8")
+building_name = "mine"
+building_node = NodePath("Mine_")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 82.9936, 83.332)
+projection = 1
+fov = 22.1
+size = 16.837
+near = 0.038
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, -40.2722)
+gi_mode = 0
+texture = ExtResource("1_6qdwy")
+
+[node name="Mine_" parent="." instance=ExtResource("2_mu5me")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)

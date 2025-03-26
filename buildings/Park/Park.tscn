@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2rikkul58t1n"]
+
+[ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_vq38o"]
+[ext_resource type="Texture2D" uid="uid://bp52g2irp02kv" path="res://szeneBackground.png" id="2_mc34y"]
+[ext_resource type="PackedScene" uid="uid://bhyciyoobfx5r" path="res://Building Models/Erholungscenter/Erholungscenter.gltf" id="3_aonn2"]
+
+[node name="Park" type="Node3D" node_paths=PackedStringArray("building_node")]
+script = ExtResource("1_vq38o")
+building_name = "park"
+building_node = NodePath("Erholungscenter2")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 89.058, 83.332)
+projection = 1
+fov = 22.1
+size = 37.425
+near = 0.038
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, -40.2722)
+gi_mode = 0
+texture = ExtResource("2_mc34y")
+
+[node name="Erholungscenter2" parent="." instance=ExtResource("3_aonn2")]

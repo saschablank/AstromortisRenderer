@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://chne3pikx1omq"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_blwa4"]
-[ext_resource type="PackedScene" uid="uid://dxq4sr1mpodye" path="res://models/Living_Quater.gltf" id="2_e48v8"]
 [ext_resource type="Texture2D" uid="uid://bp52g2irp02kv" path="res://szeneBackground.png" id="3_6ngkv"]
+[ext_resource type="PackedScene" uid="uid://bac0ly5pti1uf" path="res://Building Models/Living_Quater/Living_Quater.gltf" id="3_s4hsl"]
 
 [node name="LivingQuarter" type="Node3D" node_paths=PackedStringArray("building_node")]
 script = ExtResource("1_blwa4")
@@ -20,10 +20,10 @@ fov = 22.1
 size = 23.075
 near = 0.038
 
-[node name="Living_Quater2" parent="." instance=ExtResource("2_e48v8")]
-transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)
-
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, -315.548)
 gi_mode = 0
 texture = ExtResource("3_6ngkv")
+
+[node name="Living_Quater2" parent="." instance=ExtResource("3_s4hsl")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)

@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk8b5h0lca22v"]
+
+[ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_ajxag"]
+[ext_resource type="Texture2D" uid="uid://bp52g2irp02kv" path="res://szeneBackground.png" id="2_o7xmq"]
+[ext_resource type="PackedScene" uid="uid://0up6trfy8j0b" path="res://Building Models/Abfallentsorgungsanlage/Abfallentsorgungsanlage.gltf" id="3_jgg2p"]
+
+[node name="GarbageDisposal" type="Node3D" node_paths=PackedStringArray("building_node")]
+script = ExtResource("1_ajxag")
+building_name = "garbage_disposal"
+building_node = NodePath("Abfallentsorgungsanlage")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 89.058, 83.332)
+projection = 1
+fov = 22.1
+size = 21.457
+near = 0.038
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, -40.2722)
+gi_mode = 0
+texture = ExtResource("2_o7xmq")
+
+[node name="Abfallentsorgungsanlage" parent="." instance=ExtResource("3_jgg2p")]

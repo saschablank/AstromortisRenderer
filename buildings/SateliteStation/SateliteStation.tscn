@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://u4de158ykt87"]
+
+[ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_00loo"]
+[ext_resource type="Texture2D" uid="uid://bp52g2irp02kv" path="res://szeneBackground.png" id="2_wvdci"]
+[ext_resource type="PackedScene" uid="uid://cjah7buk7eg5p" path="res://Building Models/Main_Satalitenstation/Main_Satalitenstation.gltf" id="3_utupj"]
+
+[node name="SateliteStation" type="Node3D" node_paths=PackedStringArray("building_node")]
+script = ExtResource("1_00loo")
+building_name = "satelite_station"
+building_node = NodePath("Main_Satalitenstation")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 83.4577, 83.332)
+projection = 1
+fov = 22.1
+size = 12.131
+near = 0.038
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, -40.2722)
+gi_mode = 0
+texture = ExtResource("2_wvdci")
+
+[node name="Main_Satalitenstation" parent="." instance=ExtResource("3_utupj")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)

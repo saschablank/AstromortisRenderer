@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dkypw3ksw72ni"]
 
-[ext_resource type="PackedScene" uid="uid://cvfkf5r65456i" path="res://models/Solar_Panel.gltf" id="1_cmcii"]
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_svffv"]
+[ext_resource type="PackedScene" uid="uid://ccm4mdk3c8uq" path="res://Building Models/Solar_Panel_01/Solar_Panel.gltf" id="3_beg8t"]
 [ext_resource type="Texture2D" uid="uid://bp52g2irp02kv" path="res://szeneBackground.png" id="3_p3rcq"]
 
 [node name="SolarPanel" type="Node3D" node_paths=PackedStringArray("building_node")]
@@ -20,10 +20,10 @@ fov = 22.1
 size = 5.0
 near = 0.038
 
-[node name="Solar_Panel" parent="." instance=ExtResource("1_cmcii")]
-transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 2.53532)
-
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, -40.2722)
 gi_mode = 0
 texture = ExtResource("3_p3rcq")
+
+[node name="Solar_Panel" parent="." instance=ExtResource("3_beg8t")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, -2.65842, 0)

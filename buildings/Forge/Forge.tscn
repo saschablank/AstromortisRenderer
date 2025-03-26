@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dq64meyhjyfur"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_84rgp"]
-[ext_resource type="PackedScene" uid="uid://eacxq08m43tb" path="res://models/Schmelze.gltf" id="1_kpvp4"]
+[ext_resource type="PackedScene" uid="uid://cjq28nq1c3g8i" path="res://Building Models/Schmelze/Schmelze.gltf" id="3_4pd4v"]
 [ext_resource type="Texture2D" uid="uid://bp52g2irp02kv" path="res://szeneBackground.png" id="3_7c43e"]
 
 [node name="Forge" type="Node3D" node_paths=PackedStringArray("building_node")]
@@ -20,10 +20,10 @@ fov = 22.1
 size = 14.035
 near = 0.038
 
-[node name="Schmelze2" parent="." instance=ExtResource("1_kpvp4")]
-transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)
-
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, -315.548)
 gi_mode = 0
 texture = ExtResource("3_7c43e")
+
+[node name="Schmelze2" parent="." instance=ExtResource("3_4pd4v")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)

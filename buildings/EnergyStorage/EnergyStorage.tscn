@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://bnoa6boq4ub14"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_bi43y"]
-[ext_resource type="PackedScene" uid="uid://dyyn0quk3moly" path="res://models/Energy_Storage.gltf" id="2_3sg5h"]
+[ext_resource type="PackedScene" uid="uid://dgpdwtavdx62p" path="res://Building Models/Energy_Storage/Energy_Storagel.gltf" id="3_ay40e"]
 [ext_resource type="Texture2D" uid="uid://bp52g2irp02kv" path="res://szeneBackground.png" id="3_h1e6p"]
 
 [node name="EnergyStorage" type="Node3D" node_paths=PackedStringArray("building_node")]
 script = ExtResource("1_bi43y")
 building_name = "energy_storage"
-building_node = NodePath("Energy_Storage2")
+building_node = NodePath("Energy_Storagel")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
@@ -20,10 +20,10 @@ fov = 22.1
 size = 9.206
 near = 0.038
 
-[node name="Energy_Storage2" parent="." instance=ExtResource("2_3sg5h")]
-transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)
-
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, -40.2722)
 gi_mode = 0
 texture = ExtResource("3_h1e6p")
+
+[node name="Energy_Storagel" parent="." instance=ExtResource("3_ay40e")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)

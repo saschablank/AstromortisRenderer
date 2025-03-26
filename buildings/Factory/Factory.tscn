@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfx6f72j1w8wq"]
+
+[ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_63gj2"]
+[ext_resource type="Texture2D" uid="uid://bp52g2irp02kv" path="res://szeneBackground.png" id="1_f4xyo"]
+[ext_resource type="PackedScene" uid="uid://bhgsbtw6d3t0t" path="res://Building Models/Main_Factory/Main_Factory.gltf" id="2_28g31"]
+
+[node name="Factory" type="Node3D" node_paths=PackedStringArray("building_node")]
+script = ExtResource("1_63gj2")
+building_name = "factory"
+building_node = NodePath("Main_Factory")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -2.23599, 89.0583, 83.332)
+projection = 1
+fov = 22.1
+size = 70.366
+near = 0.038
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, -40.2722)
+gi_mode = 0
+texture = ExtResource("1_f4xyo")
+
+[node name="Main_Factory" parent="." instance=ExtResource("2_28g31")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)
