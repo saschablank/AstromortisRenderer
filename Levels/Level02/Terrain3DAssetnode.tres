@@ -61,7 +61,8 @@ name = "Ground033"
 id = 1
 albedo_texture = ExtResource("3_12sex")
 normal_texture = ExtResource("4_j4qbj")
-detiling = 0.265
+uv_scale = 2.0
+detiling = 1.0
 
 [sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_88at7"]
 name = "Ground049A"

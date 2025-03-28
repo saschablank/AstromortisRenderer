@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c81qbha6fcgri"]
+[gd_scene load_steps=5 format=3 uid="uid://c81qbha6fcgri"]
 
 [ext_resource type="Terrain3DMaterial" uid="uid://cydel065ah7yd" path="res://Levels/Level02/Terrain3DMaterialnode_3d.tres" id="1_yn54n"]
 [ext_resource type="Terrain3DAssets" uid="uid://bt1jf5vdsmhcm" path="res://Levels/Level02/Terrain3DAssetnode.tres" id="2_nb5rg"]
 [ext_resource type="Script" path="res://TerrainRenderer.gd" id="3_g35ti"]
+[ext_resource type="PackedScene" uid="uid://dtrvehyi3vf5k" path="res://Building Models/Dronehub/Dronehub.gltf" id="4_0bm77"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -18,10 +19,13 @@ top_level = true
 metadata/_edit_lock_ = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -234.209, 300, 76.0234)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -132.218, 300, 76.0234)
 projection = 1
 size = 50.0
 script = ExtResource("3_g35ti")
 tile_count_x = 10
 tile_count_y = 7
 output_folder = "res://output/level02/"
+
+[node name="Dronehub" parent="." instance=ExtResource("4_0bm77")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -135.81, 0, -209.243)
