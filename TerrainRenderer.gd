@@ -89,19 +89,7 @@ func jump_and_render():
 			y += 1
 			x = 0
 			global_position.x = start_pos.x
-			#keep_aspect = KEEP_HEIGHT
-			#await RenderingServer.frame_post_draw 
-			global_position.z += 142
-	#		var screen_coords = unproject_position(global_position)
-	#		screen_coords += Vector2(0, 1024)
-	#		global_position.z = project_position(screen_coords,0).z
-			
-			#var step_z = size * step_size_z
-			#print(step_z)
-			## 135 == 180 - 45 i dont fully understand why but it has somthing to do with the rotation of the camera
-			#global_position.z += step_z
-	
-			# Prüfen, ob die Verschiebung korrekt war
+			global_position.z += 71
 	if pack_output == true:
 		complete_map.save_png(output_folder + "level01_complete.png")
 	get_tree().quit(0)
