@@ -10,7 +10,7 @@ def html_to_bgr(html_color):
     return np.array(rgb[::-1])  # In (B, G, R) umwandeln
 
 def get_files():
-    verzeichnis = Path("output/buildings/")
+    verzeichnis = Path("output\\buildings\\")
     dateien = [f.name for f in verzeichnis.iterdir() if f.is_file()]
 
     print(dateien)
@@ -22,7 +22,7 @@ files = get_files()
 for file in files:
     if file.find(".png.import") == -1:
         # Bild laden (mit Alpha-Kanal)
-        image = cv2.imread("output/buildings/" + file, cv2.IMREAD_UNCHANGED)
+        image = cv2.imread("output\\buildings\\" + file, cv2.IMREAD_UNCHANGED)
 
 
         # Prüfen, ob Bild einen Alpha-Kanal hat
@@ -52,7 +52,7 @@ for file in files:
             # Ergebnis speichern
                     
                 # Ergebnis speichern
-        cv2.imwrite("output/buildings/final/" + file, cropped)
+        cv2.imwrite("output\\buildings\\final\\" + file, cropped)
         
 
             
