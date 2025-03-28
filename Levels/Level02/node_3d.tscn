@@ -19,7 +19,7 @@ top_level = true
 metadata/_edit_lock_ = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -132.218, 300, 76.0234)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -230.311, 300, 76.0234)
 projection = 1
 size = 50.0
 script = ExtResource("3_g35ti")
@@ -29,3 +29,4 @@ output_folder = "res://output/level02/"
 
 [node name="Dronehub" parent="." instance=ExtResource("4_0bm77")]
 transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -135.81, 0, -209.243)
+visible = false
