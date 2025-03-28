@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddeuue8vg4qdt"
-path.s3tc="res://.godot/imported/Main_Metal_Metal_Plates_M_Color1k.jpg-ca0ec5e5aeb5c220fe830f54aedeb1eb.s3tc.ctex"
+uid="uid://45qy8iljnken"
+path.s3tc="res://.godot/imported/MetalPlates004_1K-PNG_Color_hell.png-b71d8ac497b33b7451680d30bc1fe892.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Building Models/Main_Factory/Main_Metal_Metal_Plates_M_Color1k.jpg"
-dest_files=["res://.godot/imported/Main_Metal_Metal_Plates_M_Color1k.jpg-ca0ec5e5aeb5c220fe830f54aedeb1eb.s3tc.ctex"]
+source_file="res://Building Models/Main_Factory/MetalPlates004_1K-PNG_Color_hell.png"
+dest_files=["res://.godot/imported/MetalPlates004_1K-PNG_Color_hell.png-b71d8ac497b33b7451680d30bc1fe892.s3tc.ctex"]
 
 [params]
 
