@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c81qbha6fcgri"]
+[gd_scene load_steps=6 format=3 uid="uid://c81qbha6fcgri"]
 
 [ext_resource type="Terrain3DMaterial" uid="uid://cydel065ah7yd" path="res://Levels/Level02/Terrain3DMaterialnode_3d.tres" id="1_yn54n"]
 [ext_resource type="Terrain3DAssets" uid="uid://bt1jf5vdsmhcm" path="res://Levels/Level02/Terrain3DAssetnode.tres" id="2_nb5rg"]
 [ext_resource type="Script" path="res://TerrainRenderer.gd" id="3_g35ti"]
 [ext_resource type="PackedScene" uid="uid://dtrvehyi3vf5k" path="res://Building Models/Dronehub/Dronehub.gltf" id="4_0bm77"]
+[ext_resource type="PackedScene" uid="uid://bhgsbtw6d3t0t" path="res://Building Models/Main_Factory/Main_Factory.gltf" id="5_wg3of"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -30,3 +31,9 @@ output_folder = "res://output/level02/"
 [node name="Dronehub" parent="." instance=ExtResource("4_0bm77")]
 transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -135.81, 0, -209.243)
 visible = false
+
+[node name="Main_Factory" parent="." instance=ExtResource("5_wg3of")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.611, -0.0131874, 123.792)
+
+[node name="Dronehub2" parent="." instance=ExtResource("4_0bm77")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.189, -0.104833, 139.529)
