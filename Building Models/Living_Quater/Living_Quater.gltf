@@ -65,7 +65,7 @@
 					"mesh_data":0,
 					"export_UI":1,
 					"save_path":"//..\\..\\..\\..\\source\\repos\\Main_Game\\AstromortisRenderer\\Building Models\\Living_Quater\\Living_Quater.gltf",
-					"counter":21
+					"counter":24
 				}
 			},
 			"name":"Scene",
@@ -133,24 +133,6 @@
 					1
 				]
 			}
-		},
-		{
-			"doubleSided":true,
-			"name":"Geb\u00e4ude_Living_Quater_M"
-		},
-		{
-			"doubleSided":true,
-			"name":"Geb\u00e4udeboden_Living_Quater_M",
-			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0.800000011920929,
-					0.800000011920929,
-					0.800000011920929,
-					1
-				],
-				"metallicFactor":0,
-				"roughnessFactor":0.5
-			}
 		}
 	],
 	"meshes":[
@@ -186,24 +168,6 @@
 					},
 					"indices":11,
 					"material":2
-				},
-				{
-					"attributes":{
-						"POSITION":12,
-						"NORMAL":13,
-						"TEXCOORD_0":14
-					},
-					"indices":15,
-					"material":3
-				},
-				{
-					"attributes":{
-						"POSITION":16,
-						"NORMAL":17,
-						"TEXCOORD_0":18
-					},
-					"indices":19,
-					"material":4
 				}
 			]
 		}
@@ -212,7 +176,7 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":224,
+			"count":117,
 			"max":[
 				0.9491701126098633,
 				0.9900436401367188,
@@ -228,25 +192,25 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":224,
+			"count":117,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":224,
+			"count":117,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":336,
+			"count":117,
 			"type":"SCALAR"
 		},
 		{
 			"bufferView":4,
 			"componentType":5126,
-			"count":314,
+			"count":306,
 			"max":[
 				0.9510578513145447,
 				1,
@@ -262,19 +226,19 @@
 		{
 			"bufferView":5,
 			"componentType":5126,
-			"count":314,
+			"count":306,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":6,
 			"componentType":5126,
-			"count":314,
+			"count":306,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":7,
 			"componentType":5123,
-			"count":720,
+			"count":702,
 			"type":"SCALAR"
 		},
 		{
@@ -310,201 +274,85 @@
 			"componentType":5123,
 			"count":204,
 			"type":"SCALAR"
-		},
-		{
-			"bufferView":12,
-			"componentType":5126,
-			"count":575,
-			"max":[
-				0.8273290991783142,
-				0.7142857313156128,
-				0.831648588180542
-			],
-			"min":[
-				-0.831648588180542,
-				0.007817886769771576,
-				-0.8273290991783142
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":13,
-			"componentType":5126,
-			"count":575,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":14,
-			"componentType":5126,
-			"count":575,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":15,
-			"componentType":5123,
-			"count":2352,
-			"type":"SCALAR"
-		},
-		{
-			"bufferView":16,
-			"componentType":5126,
-			"count":269,
-			"max":[
-				0.8273290991783142,
-				0.3571428656578064,
-				0.831648588180542
-			],
-			"min":[
-				-0.831648588180542,
-				0.007817886769771576,
-				-0.8273290991783142
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":17,
-			"componentType":5126,
-			"count":269,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":18,
-			"componentType":5126,
-			"count":269,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":19,
-			"componentType":5123,
-			"count":918,
-			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":2688,
+			"byteLength":1404,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":2688,
-			"byteOffset":2688,
+			"byteLength":1404,
+			"byteOffset":1404,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":1792,
-			"byteOffset":5376,
+			"byteLength":936,
+			"byteOffset":2808,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":672,
-			"byteOffset":7168,
+			"byteLength":234,
+			"byteOffset":3744,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":3768,
-			"byteOffset":7840,
+			"byteLength":3672,
+			"byteOffset":3980,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":3768,
-			"byteOffset":11608,
+			"byteLength":3672,
+			"byteOffset":7652,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":2512,
-			"byteOffset":15376,
+			"byteLength":2448,
+			"byteOffset":11324,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":1440,
-			"byteOffset":17888,
+			"byteLength":1404,
+			"byteOffset":13772,
 			"target":34963
 		},
 		{
 			"buffer":0,
 			"byteLength":840,
-			"byteOffset":19328,
+			"byteOffset":15176,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":840,
-			"byteOffset":20168,
+			"byteOffset":16016,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":560,
-			"byteOffset":21008,
+			"byteOffset":16856,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":408,
-			"byteOffset":21568,
-			"target":34963
-		},
-		{
-			"buffer":0,
-			"byteLength":6900,
-			"byteOffset":21976,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":6900,
-			"byteOffset":28876,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":4600,
-			"byteOffset":35776,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":4704,
-			"byteOffset":40376,
-			"target":34963
-		},
-		{
-			"buffer":0,
-			"byteLength":3228,
-			"byteOffset":45080,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":3228,
-			"byteOffset":48308,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":2152,
-			"byteOffset":51536,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":1836,
-			"byteOffset":53688,
+			"byteOffset":17416,
 			"target":34963
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":55524,
+			"byteLength":17824,
 			"uri":"Living_Quater.bin"
 		}
 	]
