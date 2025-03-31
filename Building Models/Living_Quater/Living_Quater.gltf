@@ -65,7 +65,7 @@
 					"mesh_data":0,
 					"export_UI":1,
 					"save_path":"//..\\..\\..\\..\\source\\repos\\Main_Game\\AstromortisRenderer\\Building Models\\Living_Quater\\Living_Quater.gltf",
-					"counter":33
+					"counter":38
 				}
 			},
 			"name":"Scene",
@@ -148,13 +148,16 @@
 		{
 			"doubleSided":true,
 			"name":"Boden_Living_Quater_M",
+			"normalTexture":{
+				"index":3
+			},
 			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0.9856688976287842,
-					0.9714425802230835,
-					1,
-					1
-				]
+				"baseColorTexture":{
+					"index":4
+				},
+				"metallicRoughnessTexture":{
+					"index":5
+				}
 			}
 		}
 	],
@@ -224,6 +227,18 @@
 		{
 			"sampler":0,
 			"source":2
+		},
+		{
+			"sampler":0,
+			"source":3
+		},
+		{
+			"sampler":0,
+			"source":4
+		},
+		{
+			"sampler":0,
+			"source":5
 		}
 	],
 	"images":[
@@ -241,15 +256,30 @@
 			"mimeType":"image/png",
 			"name":"Facade006_1K-PNG_Metalness-Facade006_1K-PNG_Roughness",
 			"uri":"Facade006_1K-PNG_Metalness-Facade006_1K-PNG_Roughness.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"MetalPlates004_1K-PNG_NormalGL",
+			"uri":"MetalPlates004_1K-PNG_NormalGL.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"MetalPlates004_1K-PNG_Color",
+			"uri":"MetalPlates004_1K-PNG_Color.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"MetalPlates004_1K-PNG_Metalness-MetalPlates004_1K-PNG_Roughness",
+			"uri":"MetalPlates004_1K-PNG_Metalness-MetalPlates004_1K-PNG_Roughness.png"
 		}
 	],
 	"accessors":[
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":124,
+			"count":202,
 			"max":[
-				1,
+				9,
 				9,
 				8.197200775146484
 			],
@@ -263,25 +293,25 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":124,
+			"count":202,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":124,
+			"count":202,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":228,
+			"count":348,
 			"type":"SCALAR"
 		},
 		{
 			"bufferView":4,
 			"componentType":5126,
-			"count":117,
+			"count":120,
 			"max":[
 				0.9491701126098633,
 				1.0786207914352417,
@@ -297,25 +327,25 @@
 		{
 			"bufferView":5,
 			"componentType":5126,
-			"count":117,
+			"count":120,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":6,
 			"componentType":5126,
-			"count":117,
+			"count":120,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":7,
 			"componentType":5123,
-			"count":117,
+			"count":120,
 			"type":"SCALAR"
 		},
 		{
 			"bufferView":8,
 			"componentType":5126,
-			"count":446,
+			"count":386,
 			"max":[
 				0.9510578513145447,
 				1.088577151298523,
@@ -331,28 +361,28 @@
 		{
 			"bufferView":9,
 			"componentType":5126,
-			"count":446,
+			"count":386,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":10,
 			"componentType":5126,
-			"count":446,
+			"count":386,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":11,
 			"componentType":5123,
-			"count":1026,
+			"count":846,
 			"type":"SCALAR"
 		},
 		{
 			"bufferView":12,
 			"componentType":5126,
-			"count":30,
+			"count":110,
 			"max":[
 				0.9510578513145447,
-				0,
+				0.08857710659503937,
 				0.9999999403953552
 			],
 			"min":[
@@ -365,117 +395,117 @@
 		{
 			"bufferView":13,
 			"componentType":5126,
-			"count":30,
+			"count":110,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":14,
 			"componentType":5126,
-			"count":30,
+			"count":110,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":15,
 			"componentType":5123,
-			"count":144,
+			"count":324,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":1488,
+			"byteLength":2424,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":1488,
-			"byteOffset":1488,
+			"byteLength":2424,
+			"byteOffset":2424,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":992,
-			"byteOffset":2976,
+			"byteLength":1616,
+			"byteOffset":4848,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":456,
-			"byteOffset":3968,
+			"byteLength":696,
+			"byteOffset":6464,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":1404,
-			"byteOffset":4424,
+			"byteLength":1440,
+			"byteOffset":7160,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":1404,
-			"byteOffset":5828,
+			"byteLength":1440,
+			"byteOffset":8600,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":936,
-			"byteOffset":7232,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":234,
-			"byteOffset":8168,
-			"target":34963
-		},
-		{
-			"buffer":0,
-			"byteLength":5352,
-			"byteOffset":8404,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":5352,
-			"byteOffset":13756,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":3568,
-			"byteOffset":19108,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":2052,
-			"byteOffset":22676,
-			"target":34963
-		},
-		{
-			"buffer":0,
-			"byteLength":360,
-			"byteOffset":24728,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":360,
-			"byteOffset":25088,
+			"byteLength":960,
+			"byteOffset":10040,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":240,
-			"byteOffset":25448,
+			"byteOffset":11000,
+			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":4632,
+			"byteOffset":11240,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":288,
-			"byteOffset":25688,
+			"byteLength":4632,
+			"byteOffset":15872,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":3088,
+			"byteOffset":20504,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":1692,
+			"byteOffset":23592,
+			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":1320,
+			"byteOffset":25284,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":1320,
+			"byteOffset":26604,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":880,
+			"byteOffset":27924,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":648,
+			"byteOffset":28804,
 			"target":34963
 		}
 	],
@@ -487,7 +517,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":25976,
+			"byteLength":29452,
 			"uri":"Living_Quater.bin"
 		}
 	]
