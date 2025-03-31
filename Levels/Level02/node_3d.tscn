@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://c81qbha6fcgri"]
+[gd_scene load_steps=9 format=3 uid="uid://c81qbha6fcgri"]
 
 [ext_resource type="Terrain3DMaterial" uid="uid://cydel065ah7yd" path="res://Levels/Level02/Terrain3DMaterialnode_3d.tres" id="1_yn54n"]
 [ext_resource type="Terrain3DAssets" uid="uid://bt1jf5vdsmhcm" path="res://Levels/Level02/Terrain3DAssetnode.tres" id="2_nb5rg"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bhgsbtw6d3t0t" path="res://Building Models/Main_Factory/Main_Factory.gltf" id="5_wg3of"]
 [ext_resource type="PackedScene" uid="uid://dw1akrx726l2q" path="res://Building Models/Main_Storage/Main_Storage.gltf" id="6_rvmvx"]
 [ext_resource type="PackedScene" uid="uid://bac0ly5pti1uf" path="res://Building Models/Living_Quater/Living_Quater.gltf" id="7_cakd2"]
+[ext_resource type="PackedScene" uid="uid://cnklasf7p5mqp" path="res://Building Models/Smelter/smelter.gltf" id="8_eiv1s"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -45,3 +46,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92.345, 0, 163.828)
 
 [node name="Living_Quater2" parent="." instance=ExtResource("7_cakd2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 119.664, 0, 113.691)
+
+[node name="smelter" parent="." instance=ExtResource("8_eiv1s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.0789, 0, 90.2804)
