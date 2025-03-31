@@ -3,6 +3,9 @@
 		"generator":"Khronos glTF Blender I/O v4.3.47",
 		"version":"2.0"
 	},
+	"extensionsUsed":[
+		"KHR_materials_specular"
+	],
 	"scene":0,
 	"scenes":[
 		{
@@ -65,7 +68,7 @@
 					"mesh_data":0,
 					"export_UI":1,
 					"save_path":"//..\\..\\..\\..\\source\\repos\\Main_Game\\AstromortisRenderer\\Building Models\\Mine\\Mine_.gltf",
-					"counter":12
+					"counter":20
 				}
 			},
 			"name":"Scene",
@@ -247,10 +250,19 @@
 	"materials":[
 		{
 			"doubleSided":true,
+			"extensions":{
+				"KHR_materials_specular":{
+					"specularColorFactor":[
+						1.063636302947998,
+						1.063636302947998,
+						1.063636302947998
+					]
+				}
+			},
 			"name":"Main_Bronze_M",
 			"normalTexture":{
 				"index":0,
-				"scale":0.20000000298023224
+				"scale":0
 			},
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
@@ -392,8 +404,8 @@
 		},
 		{
 			"mimeType":"image/jpeg",
-			"name":"Main_Bronze_Metal_Plates_M_Color_1k",
-			"uri":"Main_Bronze_Metal_Plates_M_Color_1k.jpg"
+			"name":"Main_Bronze2_Metal_Plates_M_Color_1k",
+			"uri":"Main_Bronze2_Metal_Plates_M_Color_1k.jpg"
 		},
 		{
 			"mimeType":"image/png",
