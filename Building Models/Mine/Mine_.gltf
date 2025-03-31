@@ -68,7 +68,7 @@
 					"mesh_data":0,
 					"export_UI":1,
 					"save_path":"//..\\..\\..\\..\\source\\repos\\Main_Game\\AstromortisRenderer\\Building Models\\Mine\\Mine_.gltf",
-					"counter":20
+					"counter":23
 				}
 			},
 			"name":"Scene",
@@ -262,7 +262,7 @@
 			"name":"Main_Bronze_M",
 			"normalTexture":{
 				"index":0,
-				"scale":0
+				"scale":0.20000000298023224
 			},
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
@@ -414,8 +414,8 @@
 		},
 		{
 			"mimeType":"image/jpeg",
-			"name":"Main_Metal_Metal_Plates_M_Color1k",
-			"uri":"Main_Metal_Metal_Plates_M_Color1k.jpg"
+			"name":"Main_Metal2_Metal_Plates_M_Color1k",
+			"uri":"Main_Metal2_Metal_Plates_M_Color1k.jpg"
 		},
 		{
 			"mimeType":"image/png",
