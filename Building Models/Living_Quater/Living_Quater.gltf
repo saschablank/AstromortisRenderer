@@ -65,7 +65,7 @@
 					"mesh_data":0,
 					"export_UI":1,
 					"save_path":"//..\\..\\..\\..\\source\\repos\\Main_Game\\AstromortisRenderer\\Building Models\\Living_Quater\\Living_Quater.gltf",
-					"counter":24
+					"counter":25
 				}
 			},
 			"name":"Scene",
@@ -179,12 +179,12 @@
 			"count":117,
 			"max":[
 				0.9491701126098633,
-				0.9900436401367188,
+				1.0786207914352417,
 				0.9886555075645447
 			],
 			"min":[
 				-0.9477108716964722,
-				0.01490718126296997,
+				0.10348428785800934,
 				-0.9886555075645447
 			],
 			"type":"VEC3"
@@ -210,10 +210,10 @@
 		{
 			"bufferView":4,
 			"componentType":5126,
-			"count":306,
+			"count":346,
 			"max":[
 				0.9510578513145447,
-				1,
+				1.088577151298523,
 				0.9999999403953552
 			],
 			"min":[
@@ -226,19 +226,19 @@
 		{
 			"bufferView":5,
 			"componentType":5126,
-			"count":306,
+			"count":346,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":6,
 			"componentType":5126,
-			"count":306,
+			"count":346,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":7,
 			"componentType":5123,
-			"count":702,
+			"count":762,
 			"type":"SCALAR"
 		},
 		{
@@ -247,7 +247,7 @@
 			"count":70,
 			"max":[
 				0.9558336734771729,
-				0.013072961941361427,
+				0.10165006667375565,
 				1.0050216913223267
 			],
 			"min":[
@@ -303,56 +303,56 @@
 		},
 		{
 			"buffer":0,
-			"byteLength":3672,
+			"byteLength":4152,
 			"byteOffset":3980,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":3672,
-			"byteOffset":7652,
+			"byteLength":4152,
+			"byteOffset":8132,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":2448,
-			"byteOffset":11324,
+			"byteLength":2768,
+			"byteOffset":12284,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":1404,
-			"byteOffset":13772,
+			"byteLength":1524,
+			"byteOffset":15052,
 			"target":34963
 		},
 		{
 			"buffer":0,
 			"byteLength":840,
-			"byteOffset":15176,
+			"byteOffset":16576,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":840,
-			"byteOffset":16016,
+			"byteOffset":17416,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":560,
-			"byteOffset":16856,
+			"byteOffset":18256,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":408,
-			"byteOffset":17416,
+			"byteOffset":18816,
 			"target":34963
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":17824,
+			"byteLength":19224,
 			"uri":"Living_Quater.bin"
 		}
 	]
