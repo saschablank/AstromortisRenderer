@@ -65,7 +65,7 @@
 					"mesh_data":0,
 					"export_UI":1,
 					"save_path":"//..\\..\\..\\..\\source\\repos\\Main_Game\\AstromortisRenderer\\Building Models\\Sauerstofftank\\Sauerstofftank.gltf",
-					"counter":17
+					"counter":20
 				}
 			},
 			"name":"Scene",
@@ -186,8 +186,8 @@
 		},
 		{
 			"mimeType":"image/jpeg",
-			"name":"Main_Bronze_Metal_Plates_M_Color_1k",
-			"uri":"Main_Bronze_Metal_Plates_M_Color_1k.jpg"
+			"name":"Main_Bronze2_Metal_Plates_M_Color_1k",
+			"uri":"Main_Bronze2_Metal_Plates_M_Color_1k.jpg"
 		},
 		{
 			"mimeType":"image/png",
@@ -196,8 +196,8 @@
 		},
 		{
 			"mimeType":"image/jpeg",
-			"name":"Main_Metal_Metal_Plates_M_Color1k",
-			"uri":"Main_Metal_Metal_Plates_M_Color1k.jpg"
+			"name":"Main_Metal2_Metal_Plates_M_Color1k",
+			"uri":"Main_Metal2_Metal_Plates_M_Color1k.jpg"
 		},
 		{
 			"mimeType":"image/png",
