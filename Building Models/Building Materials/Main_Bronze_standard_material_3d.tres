@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://baj7kwtbvc31"]
+
+[ext_resource type="Texture2D" uid="uid://c7mh23oxhnxrt" path="res://Building Models/Building Materials/Bronze_M_packed_albedo_height.png" id="1_q82gr"]
+[ext_resource type="Texture2D" uid="uid://db4aoctvuh4gq" path="res://Building Models/Building Materials/Bronze_M_packed_normal_roughness.png" id="2_pshge"]
+
+[resource]
+albedo_color = Color(0.988235, 1, 1, 1)
+albedo_texture = ExtResource("1_q82gr")
+normal_enabled = true
+normal_texture = ExtResource("2_pshge")
