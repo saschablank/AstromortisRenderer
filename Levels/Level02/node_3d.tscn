@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c81qbha6fcgri"]
+[gd_scene load_steps=11 format=3 uid="uid://c81qbha6fcgri"]
 
 [ext_resource type="Terrain3DMaterial" uid="uid://cydel065ah7yd" path="res://Levels/Level02/Terrain3DMaterialnode_3d.tres" id="1_yn54n"]
 [ext_resource type="Terrain3DAssets" uid="uid://bt1jf5vdsmhcm" path="res://Levels/Level02/Terrain3DAssetnode.tres" id="2_nb5rg"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://bac0ly5pti1uf" path="res://Building Models/Living_Quater/Living_Quater.gltf" id="7_cakd2"]
 [ext_resource type="PackedScene" uid="uid://cnklasf7p5mqp" path="res://Building Models/Smelter/smelter.gltf" id="8_eiv1s"]
 [ext_resource type="PackedScene" uid="uid://y011mvhluen0" path="res://Building Models/Mine/Mine_.gltf" id="9_04kql"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xf30i"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -53,3 +55,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.0789, 0, 90.2804)
 
 [node name="Mine_" parent="." instance=ExtResource("9_04kql")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.8658, 0, 95.6313)
+
+[node name="Mine_Dach" parent="Mine_" index="0"]
+transform = Transform3D(-1.79456, -7.5501e-08, 1.01867e-05, 7.5501e-08, 1.79436, 0.0266, -1.01867e-05, 0.0266, -1.79436, -0.0337524, 0.0598759, 0)
+
+[node name="Mine" parent="Mine_" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_xf30i")
+
+[editable path="Mine_"]

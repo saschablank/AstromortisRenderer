@@ -64,7 +64,7 @@
 				"GodotPipelineProps":{
 					"mesh_data":0,
 					"export_UI":1,
-					"counter":19,
+					"counter":22,
 					"save_path":"//..\\..\\..\\..\\source\\repos\\Main_Game\\AstromortisRenderer\\Building Models\\Main_Satalitenstation\\Main_Satalitenstation.gltf"
 				}
 			},
@@ -274,8 +274,8 @@
 		},
 		{
 			"mimeType":"image/jpeg",
-			"name":"Main_Bronze_Metal_Plates_M_Color_1k",
-			"uri":"Main_Bronze_Metal_Plates_M_Color_1k.jpg"
+			"name":"Main_Bronze2_Metal_Plates_M_Color_1k",
+			"uri":"Main_Bronze2_Metal_Plates_M_Color_1k.jpg"
 		},
 		{
 			"mimeType":"image/png",
@@ -284,8 +284,8 @@
 		},
 		{
 			"mimeType":"image/jpeg",
-			"name":"Main_Metal_Metal_Plates_M_Color1k",
-			"uri":"Main_Metal_Metal_Plates_M_Color1k.jpg"
+			"name":"Main_Metal2_Metal_Plates_M_Color1k",
+			"uri":"Main_Metal2_Metal_Plates_M_Color1k.jpg"
 		},
 		{
 			"mimeType":"image/png",
@@ -297,7 +297,7 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":9175,
+			"count":8961,
 			"max":[
 				0.601758599281311,
 				0.47792351245880127,
@@ -313,13 +313,13 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":9175,
+			"count":8961,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":9175,
+			"count":8961,
 			"type":"VEC2"
 		},
 		{
@@ -331,7 +331,7 @@
 		{
 			"bufferView":4,
 			"componentType":5126,
-			"count":5608,
+			"count":5612,
 			"max":[
 				0.43242698907852173,
 				0.4008822441101074,
@@ -347,13 +347,13 @@
 		{
 			"bufferView":5,
 			"componentType":5126,
-			"count":5608,
+			"count":5612,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":6,
 			"componentType":5126,
-			"count":5608,
+			"count":5612,
 			"type":"VEC2"
 		},
 		{
@@ -399,7 +399,7 @@
 		{
 			"bufferView":12,
 			"componentType":5126,
-			"count":4294,
+			"count":4222,
 			"max":[
 				0.7599996328353882,
 				0.5760980248451233,
@@ -415,13 +415,13 @@
 		{
 			"bufferView":13,
 			"componentType":5126,
-			"count":4294,
+			"count":4222,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":14,
 			"componentType":5126,
-			"count":4294,
+			"count":4222,
 			"type":"VEC2"
 		},
 		{
@@ -433,7 +433,7 @@
 		{
 			"bufferView":16,
 			"componentType":5126,
-			"count":2888,
+			"count":2848,
 			"max":[
 				0.7599996328353882,
 				0.5760980248451233,
@@ -449,13 +449,13 @@
 		{
 			"bufferView":17,
 			"componentType":5126,
-			"count":2888,
+			"count":2848,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":18,
 			"componentType":5126,
-			"count":2888,
+			"count":2848,
 			"type":"VEC2"
 		},
 		{
@@ -468,122 +468,122 @@
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":110100,
+			"byteLength":107532,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":110100,
-			"byteOffset":110100,
+			"byteLength":107532,
+			"byteOffset":107532,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":73400,
-			"byteOffset":220200,
+			"byteLength":71688,
+			"byteOffset":215064,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":38208,
-			"byteOffset":293600,
+			"byteOffset":286752,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":67296,
-			"byteOffset":331808,
+			"byteLength":67344,
+			"byteOffset":324960,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":67296,
-			"byteOffset":399104,
+			"byteLength":67344,
+			"byteOffset":392304,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":44864,
-			"byteOffset":466400,
+			"byteLength":44896,
+			"byteOffset":459648,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":23928,
-			"byteOffset":511264,
+			"byteOffset":504544,
 			"target":34963
 		},
 		{
 			"buffer":0,
 			"byteLength":264,
-			"byteOffset":535192,
+			"byteOffset":528472,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":264,
-			"byteOffset":535456,
+			"byteOffset":528736,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":176,
-			"byteOffset":535720,
+			"byteOffset":529000,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":72,
-			"byteOffset":535896,
+			"byteOffset":529176,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":51528,
-			"byteOffset":535968,
+			"byteLength":50664,
+			"byteOffset":529248,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":51528,
-			"byteOffset":587496,
+			"byteLength":50664,
+			"byteOffset":579912,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":34352,
-			"byteOffset":639024,
+			"byteLength":33776,
+			"byteOffset":630576,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":18192,
-			"byteOffset":673376,
+			"byteOffset":664352,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":34656,
-			"byteOffset":691568,
+			"byteLength":34176,
+			"byteOffset":682544,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":34656,
-			"byteOffset":726224,
+			"byteLength":34176,
+			"byteOffset":716720,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":23104,
-			"byteOffset":760880,
+			"byteLength":22784,
+			"byteOffset":750896,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":11844,
-			"byteOffset":783984,
+			"byteOffset":773680,
 			"target":34963
 		}
 	],
@@ -595,7 +595,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":795828,
+			"byteLength":785524,
 			"uri":"Main_Satalitenstation.bin"
 		}
 	]

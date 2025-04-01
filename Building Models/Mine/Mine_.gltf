@@ -68,7 +68,7 @@
 					"mesh_data":0,
 					"export_UI":1,
 					"save_path":"//..\\..\\..\\..\\source\\repos\\Main_Game\\AstromortisRenderer\\Building Models\\Mine\\Mine_.gltf",
-					"counter":23
+					"counter":50
 				}
 			},
 			"name":"Scene",
@@ -278,7 +278,7 @@
 			"name":"Main_Metal_M",
 			"normalTexture":{
 				"index":3,
-				"scale":0.5
+				"scale":0.20000000298023224
 			},
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
@@ -385,22 +385,22 @@
 		},
 		{
 			"sampler":0,
-			"source":0
-		},
-		{
-			"sampler":0,
 			"source":3
 		},
 		{
 			"sampler":0,
 			"source":4
+		},
+		{
+			"sampler":0,
+			"source":5
 		}
 	],
 	"images":[
 		{
-			"mimeType":"image/jpeg",
-			"name":"Main_Bronze_Metal_Plates_M_Normal_1k",
-			"uri":"Main_Bronze_Metal_Plates_M_Normal_1k.jpg"
+			"mimeType":"image/png",
+			"name":"Bronze_M_packed_normal_roughness",
+			"uri":"Bronze_M_packed_normal_roughness.png"
 		},
 		{
 			"mimeType":"image/jpeg",
@@ -409,8 +409,13 @@
 		},
 		{
 			"mimeType":"image/png",
-			"name":"Main_Bronze_Metal_Plates_M_metalness_1k-Main_Bronze_Metal_Plates_M_Roughness_1k",
-			"uri":"Main_Bronze_Metal_Plates_M_metalness_1k-Main_Bronze_Metal_Plates_M_Roughness_1k.png"
+			"name":"Main_Bronze_Metal_Plates_M_Roughness_1k",
+			"uri":"Main_Bronze_Metal_Plates_M_Roughness_1k.png"
+		},
+		{
+			"mimeType":"image/jpeg",
+			"name":"Main_Bronze_Metal_Plates_M_Normal_1k",
+			"uri":"Main_Bronze_Metal_Plates_M_Normal_1k.jpg"
 		},
 		{
 			"mimeType":"image/jpeg",
@@ -427,7 +432,7 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":6925,
+			"count":6901,
 			"max":[
 				1.131618618965149,
 				3.2133374214172363,
@@ -443,13 +448,13 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":6925,
+			"count":6901,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":6925,
+			"count":6901,
 			"type":"VEC2"
 		},
 		{
@@ -495,7 +500,7 @@
 		{
 			"bufferView":8,
 			"componentType":5126,
-			"count":7340,
+			"count":7313,
 			"max":[
 				4.653383255004883,
 				2.615304470062256,
@@ -511,25 +516,25 @@
 		{
 			"bufferView":9,
 			"componentType":5126,
-			"count":7340,
+			"count":7313,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":10,
 			"componentType":5126,
-			"count":7340,
+			"count":7313,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":11,
 			"componentType":5123,
-			"count":17133,
+			"count":17091,
 			"type":"SCALAR"
 		},
 		{
 			"bufferView":12,
 			"componentType":5126,
-			"count":3551,
+			"count":3625,
 			"max":[
 				4.652996063232422,
 				2.291795253753662,
@@ -545,19 +550,19 @@
 		{
 			"bufferView":13,
 			"componentType":5126,
-			"count":3551,
+			"count":3625,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":14,
 			"componentType":5126,
-			"count":3551,
+			"count":3625,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":15,
 			"componentType":5123,
-			"count":9015,
+			"count":8991,
 			"type":"SCALAR"
 		},
 		{
@@ -682,173 +687,173 @@
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":83100,
+			"byteLength":82812,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":83100,
-			"byteOffset":83100,
+			"byteLength":82812,
+			"byteOffset":82812,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":55400,
-			"byteOffset":166200,
+			"byteLength":55208,
+			"byteOffset":165624,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":29340,
-			"byteOffset":221600,
+			"byteOffset":220832,
 			"target":34963
 		},
 		{
 			"buffer":0,
 			"byteLength":52164,
-			"byteOffset":250940,
+			"byteOffset":250172,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":52164,
-			"byteOffset":303104,
+			"byteOffset":302336,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":34776,
-			"byteOffset":355268,
+			"byteOffset":354500,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":15936,
-			"byteOffset":390044,
+			"byteOffset":389276,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":88080,
-			"byteOffset":405980,
+			"byteLength":87756,
+			"byteOffset":405212,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":88080,
-			"byteOffset":494060,
+			"byteLength":87756,
+			"byteOffset":492968,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":58720,
-			"byteOffset":582140,
+			"byteLength":58504,
+			"byteOffset":580724,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":34266,
-			"byteOffset":640860,
+			"byteLength":34182,
+			"byteOffset":639228,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":42612,
-			"byteOffset":675128,
+			"byteLength":43500,
+			"byteOffset":673412,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":42612,
-			"byteOffset":717740,
+			"byteLength":43500,
+			"byteOffset":716912,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":28408,
-			"byteOffset":760352,
+			"byteLength":29000,
+			"byteOffset":760412,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":18030,
-			"byteOffset":788760,
+			"byteLength":17982,
+			"byteOffset":789412,
 			"target":34963
 		},
 		{
 			"buffer":0,
 			"byteLength":74208,
-			"byteOffset":806792,
+			"byteOffset":807396,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":74208,
-			"byteOffset":881000,
+			"byteOffset":881604,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":49472,
-			"byteOffset":955208,
+			"byteOffset":955812,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":18996,
-			"byteOffset":1004680,
+			"byteOffset":1005284,
 			"target":34963
 		},
 		{
 			"buffer":0,
 			"byteLength":400,
-			"byteOffset":1023676
+			"byteOffset":1024280
 		},
 		{
 			"buffer":0,
 			"byteLength":1200,
-			"byteOffset":1024076
+			"byteOffset":1024680
 		},
 		{
 			"buffer":0,
 			"byteLength":8,
-			"byteOffset":1025276
+			"byteOffset":1025880
 		},
 		{
 			"buffer":0,
 			"byteLength":32,
-			"byteOffset":1025284
+			"byteOffset":1025888
 		},
 		{
 			"buffer":0,
 			"byteLength":24,
-			"byteOffset":1025316
+			"byteOffset":1025920
 		},
 		{
 			"buffer":0,
 			"byteLength":800,
-			"byteOffset":1025340
+			"byteOffset":1025944
 		},
 		{
 			"buffer":0,
 			"byteLength":2400,
-			"byteOffset":1026140
+			"byteOffset":1026744
 		},
 		{
 			"buffer":0,
 			"byteLength":3200,
-			"byteOffset":1028540
+			"byteOffset":1029144
 		},
 		{
 			"buffer":0,
 			"byteLength":8,
-			"byteOffset":1031740
+			"byteOffset":1032344
 		},
 		{
 			"buffer":0,
 			"byteLength":24,
-			"byteOffset":1031748
+			"byteOffset":1032352
 		}
 	],
 	"samplers":[
@@ -859,7 +864,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":1031772,
+			"byteLength":1032376,
 			"uri":"Mine_.bin"
 		}
 	]

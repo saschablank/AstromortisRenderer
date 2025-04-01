@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://b0fl7583qp5sy"]
+[gd_scene load_steps=10 format=3 uid="uid://b0fl7583qp5sy"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_hc5w2"]
 [ext_resource type="PackedScene" uid="uid://qqmkoctjxmvy" path="res://Dronehub.gltf" id="1_m8p5t"]
 [ext_resource type="Terrain3DMaterial" uid="uid://cydel065ah7yd" path="res://Levels/Level02/Terrain3DMaterialnode_3d.tres" id="3_ufheo"]
 [ext_resource type="Terrain3DAssets" uid="uid://bt1jf5vdsmhcm" path="res://Levels/Level02/Terrain3DAssetnode.tres" id="4_wc115"]
+[ext_resource type="PackedScene" uid="uid://y011mvhluen0" path="res://Building Models/Mine/Mine_.gltf" id="5_p33nw"]
+[ext_resource type="PackedScene" uid="uid://cjah7buk7eg5p" path="res://Building Models/Main_Satalitenstation/Main_Satalitenstation.gltf" id="6_tlqg2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kksow"]
 
@@ -43,3 +45,14 @@ material = ExtResource("3_ufheo")
 assets = ExtResource("4_wc115")
 top_level = true
 metadata/_edit_lock_ = true
+
+[node name="Mine_" parent="." instance=ExtResource("5_p33nw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -179.094, 0, -75.9499)
+
+[node name="Mine_Dach" parent="Mine_" index="0"]
+transform = Transform3D(-1.79456, -7.5501e-08, 1.01867e-05, 7.5501e-08, 1.79436, 0.0266, -1.01867e-05, 0.0266, -1.79436, -0.138687, -0.240852, 0)
+
+[node name="Main_Satalitenstation" parent="." instance=ExtResource("6_tlqg2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -180.863, 0, -92.7021)
+
+[editable path="Mine_"]
