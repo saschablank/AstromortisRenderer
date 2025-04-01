@@ -71,7 +71,7 @@
 					"mesh_data":0,
 					"export_UI":1,
 					"save_path":"//..\\..\\..\\..\\source\\repos\\Main_Game\\AstromortisRenderer\\Building Models\\Dronehub\\Dronehub.gltf",
-					"counter":28
+					"counter":29
 				}
 			},
 			"name":"Scene",
@@ -569,15 +569,15 @@
 		{
 			"bufferView":4,
 			"componentType":5126,
-			"count":1003,
+			"count":1030,
 			"max":[
 				10.2992582321167,
 				9.728963851928711,
-				8.5
+				12.5
 			],
 			"min":[
 				-9.149658203125,
-				0.3284796178340912,
+				0.10482457280158997,
 				-9.666620254516602
 			],
 			"type":"VEC3"
@@ -585,19 +585,19 @@
 		{
 			"bufferView":5,
 			"componentType":5126,
-			"count":1003,
+			"count":1030,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":6,
 			"componentType":5126,
-			"count":1003,
+			"count":1030,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":7,
 			"componentType":5123,
-			"count":2736,
+			"count":2808,
 			"type":"SCALAR"
 		},
 		{
@@ -637,7 +637,7 @@
 		{
 			"bufferView":12,
 			"componentType":5126,
-			"count":11014,
+			"count":10987,
 			"max":[
 				10.59160041809082,
 				10.111194610595703,
@@ -653,19 +653,19 @@
 		{
 			"bufferView":13,
 			"componentType":5126,
-			"count":11014,
+			"count":10987,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":14,
 			"componentType":5126,
-			"count":11014,
+			"count":10987,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":15,
 			"componentType":5123,
-			"count":29652,
+			"count":29580,
 			"type":"SCALAR"
 		},
 		{
@@ -934,74 +934,74 @@
 		},
 		{
 			"buffer":0,
-			"byteLength":12036,
+			"byteLength":12360,
 			"byteOffset":67304,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":12036,
-			"byteOffset":79340,
+			"byteLength":12360,
+			"byteOffset":79664,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":8024,
-			"byteOffset":91376,
+			"byteLength":8240,
+			"byteOffset":92024,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":5472,
-			"byteOffset":99400,
+			"byteLength":5616,
+			"byteOffset":100264,
 			"target":34963
 		},
 		{
 			"buffer":0,
 			"byteLength":1512,
-			"byteOffset":104872,
+			"byteOffset":105880,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":1512,
-			"byteOffset":106384,
+			"byteOffset":107392,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":1008,
-			"byteOffset":107896,
+			"byteOffset":108904,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":732,
-			"byteOffset":108904,
+			"byteOffset":109912,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":132168,
-			"byteOffset":109636,
+			"byteLength":131844,
+			"byteOffset":110644,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":132168,
-			"byteOffset":241804,
+			"byteLength":131844,
+			"byteOffset":242488,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":88112,
-			"byteOffset":373972,
+			"byteLength":87896,
+			"byteOffset":374332,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":59304,
-			"byteOffset":462084,
+			"byteLength":59160,
+			"byteOffset":462228,
 			"target":34963
 		},
 		{
