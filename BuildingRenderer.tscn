@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b0fl7583qp5sy"]
+[gd_scene load_steps=12 format=3 uid="uid://b0fl7583qp5sy"]
 
 [ext_resource type="Script" path="res://BuildingRenderer.gd" id="1_hc5w2"]
 [ext_resource type="PackedScene" uid="uid://qqmkoctjxmvy" path="res://Dronehub.gltf" id="1_m8p5t"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://y011mvhluen0" path="res://Building Models/Mine/Mine_.gltf" id="5_p33nw"]
 [ext_resource type="PackedScene" uid="uid://cjah7buk7eg5p" path="res://Building Models/Main_Satalitenstation/Main_Satalitenstation.gltf" id="6_tlqg2"]
 [ext_resource type="PackedScene" uid="uid://dtrvehyi3vf5k" path="res://Building Models/Dronehub/Dronehub.gltf" id="7_xb88h"]
+[ext_resource type="PackedScene" uid="uid://c4ja4sl8sporb" path="res://Building Models/Sauerstofftank/Sauerstofftank.gltf" id="8_cf7hn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kksow"]
 
@@ -58,5 +59,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -180.863, 0, -92.7021)
 
 [node name="Dronehub2" parent="." instance=ExtResource("7_xb88h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -177.331, 0, -52.4252)
+
+[node name="Sauerstofftank2" parent="." instance=ExtResource("8_cf7hn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -189.698, 0, -68.735)
 
 [editable path="Mine_"]
